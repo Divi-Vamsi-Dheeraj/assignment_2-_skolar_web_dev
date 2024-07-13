@@ -1,0 +1,68 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
+}
+.header{
+    background-color: #123456;
+    color: white;
+    padding: 0 15px ;
+    text-align: center;
+    width: 98%;
+}
+.main{
+    width: 90%;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section{
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #293743;
+    color: #fff;
+    border: 3px solid darkgoldenrod;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    flex: 1 1 45%;
+}
+.footer{
+    background-color: #123456;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 98.7%;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: #029447;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+.translate-box:hover{
+    transform: translate(50px, 50px);
+}
+.rotate-box:hover {
+    transform: rotate(90deg);
+}
+.scale-box:hover {
+    transform: scale(1.5);
+}
+.skew-box:hover {
+    transform: skew(0deg, 90deg);
+}
+.combined-box:hover {
+    transform: translate(50px, 50px) rotate(45deg) scale(1.5) skew(10deg, 10deg);
+}

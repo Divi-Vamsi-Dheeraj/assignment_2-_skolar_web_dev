@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ddd;
+}
+.container{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "aside main"
+        "footer footer";
+    gap: 10px;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);    
+}
+.header{
+    grid-area: header;
+    background-color: #2196f3;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    grid-area: nav;
+    background-color: #874760;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    grid-area: main;
+    background-color: rgb(255, 157, 0);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+.aside{
+    grid-area: aside;
+    background-color: #ff5722;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.footer{
+    grid-area: footer;
+    background-color: #298301;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.nested-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "item1 item2"
+        "item3 item4";
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    background: purple;
+    border: 3px solid #222798;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 20px;    
+}
+.item1{
+    margin: 10px;
+    grid-area: item1;
+}
+.item2{
+    margin: 10px;
+    grid-area: item2;
+}
+.item3{
+    margin: 10px;
+    grid-area: item3;
+}
+.item4{
+    margin: 10px;
+    grid-area: item4;
+}
+

@@ -1,0 +1,41 @@
+/*Element Selector*/
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: chocolate;
+}
+
+body{
+    background-color: lavenderblush;
+}
+
+/*Class Selector*/
+.Intro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: expanded;
+}
+
+.Hobbies{
+    list-style-type: square;
+    color: brown;
+}
+
+/*Id Selector*/
+#websites{
+    font-family: sans-serif;
+}
+
+/*Attribute Selector*/
+a[href^="https"]{
+    color: cornflowerblue;
+}
+
+/*Pseudo Class selector*/
+a:hover{
+    text-decoration: line-through;
+}
+
+/*Pseudo Element selector*/
+p::first-letter{
+    font-weight: bold;
+}

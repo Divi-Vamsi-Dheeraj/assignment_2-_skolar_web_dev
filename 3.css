@@ -1,0 +1,19 @@
+body{
+    background: radial-gradient(purple,blue,skyblue,green,yellow,orange,red);
+}
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+}
+#about{
+    font-family: cursive;
+    line-height: normal;
+}
+#hobbies{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#links{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}

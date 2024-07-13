@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #123456;
+    --secondary-color: rgb(173, 222, 242);
+    --text-color: black;
+    --header-font-size: 2em;
+    --section-font-size: 1.5em;
+    --base-font-size: 1em;
+    --spacing: 10px;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing);
+    text-align: center;
+    width: 100%;
+    font-size: var(--header-font-size);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.content {
+    width: 90%;
+    max-width: 800px;
+    margin: var(--spacing) 0;
+    padding: var(--spacing);
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section {
+    margin-bottom: var(--spacing);
+    padding: var(--spacing);
+}
+
+.section h2 {
+    font-size: var(--section-font-size);
+    margin-bottom: var(--spacing);
+}
+
+.section p, .section ul {
+    font-size: var(--base-font-size);
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing);
+    text-align: center;
+    width: 100%;
+    font-size: var(--base-font-size);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

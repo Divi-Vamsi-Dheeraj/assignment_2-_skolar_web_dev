@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Techniques</title>
+    <link rel="stylesheet" href="11.css">
+</head>
+<body>
+    <header class="header">
+        <h1>CSS Positioning Techninques</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#static">Static</a></li>
+            <li><a href="#relative">Relative</a></li>
+            <li><a href="#absolute">Absolute</a></li>
+            <li><a href="#fixed">Fixed</a></li>
+            <li><a href="#sticky">Sticky</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section id="static">
+            <h2>Static Positioning</h2>
+            <p>This is a statically positioned element, positioned normally to the document</p>
+        </section>
+        <section id="relative">
+            <h2>Relative Positioning</h2>
+            <p class="relative">This is a relatively positioned element. It is positioned relative to its normal position.</p>
+        </section>
+        <section id="absolute">
+            <h2>Absolute Positioning</h2>
+            <div class="absolute-container">
+                <p class="absolute">This is an absolutely positioned element. It is positioned relative to nearest positioned ancestor.</p>
+            </div>
+        </section>
+        <section id="fixed">
+            <h2>Fixed Positioning</h2>
+            <p class="fixed">This is a fixed positioned element. It is positioned relative to the viewport. So always stays in the same place even if scrolled</p>
+        </section>
+        <section id="sticky">
+            <h2>Sticky Positioning</h2>
+            <p class="sticky">This is a sticky positioned element, it is positioned based on user's scroll. Toggles between relative based on the scroll</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 CSS Positioning Techniques</p>
+    </footer>
+</body>
+</html>
